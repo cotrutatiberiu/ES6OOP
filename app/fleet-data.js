@@ -3,19 +3,22 @@ export let fleet =[
         license: " AC201",
         type: "drone",
         model:" asdfwe",
-        airTime: "6030"
+        airTime: "6030",
+        base:"ads"
     },
     {
         license: " AY201",
         type: "drone",
         model:" asdfwe",
-        airTime: "6030"
+        airTime: "6030",
+        base:"adsa"
     },
     {
         license: " AZ201",
         type: "drone",
         model:" asdfwe",
-        airTime: "6030"
+        airTime: "6030",
+        base:"adsc"
     },
     {
         license: " AC201",

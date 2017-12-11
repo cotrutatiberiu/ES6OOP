@@ -9,4 +9,11 @@ let dataService = new FleetDataService();
 
 dataService.loadData(fleet);
 
-console.log(dataService.cars)
+
+for(let car of dataService.cars)
+console.log(car.license);
+
+
+//LOAD DATA SIMPLE v1
+// dataService.loadData(fleet);
+// console.log(dataService.cars);
