@@ -13,6 +13,9 @@ dataService.loadData(fleet);
 for(let car of dataService.cars)
 console.log(car.license);
 
+for(let e of dataService.errors)
+console.log(e.messege);
+
 
 //LOAD DATA SIMPLE v1
 // dataService.loadData(fleet);
