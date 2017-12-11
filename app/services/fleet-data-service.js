@@ -22,6 +22,7 @@ export class FleetDataService {
             }
         }
     }
+    //car e din parametru
     loadCar(car){
         let c= new Car(car.license,car.model);
         c.miles=car.miles;
