@@ -14,7 +14,7 @@ export let fleet =[
         base:"adsa"
     },
     {
-        license: " AZ201",
+        license: "AZ201",
         type: "drone",
         model:" asdfwe",
         airTime: "6030",
@@ -25,7 +25,7 @@ export let fleet =[
         type: "car",
         make: "tesla",
         model:" asdfwe",
-        miles: "6030"
+        miles: "030"
     },
     {
         license: " AB201",

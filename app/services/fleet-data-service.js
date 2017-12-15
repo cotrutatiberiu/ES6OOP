@@ -12,10 +12,16 @@ export class FleetDataService {
     for (let data of fleet) {
       switch (data.type) {
         case "car":
+        if(this.validateCarData(data)){
           //this in functie de car-ul incarcat din for
           //instantiate car
           let car = this.loadCar(data);
+          if(car)
           this.cars.push(car);
+        }else{
+          let e = new DataError("Invalid car data",data);
+          this.errors.push(e);
+        }
           break;
         case "drone":
           this.drones.push(data);
@@ -24,6 +30,7 @@ export class FleetDataService {
           //this in functie de car-ul incarcat din for
           let e = new DataError("Invalid vehicle type", data);
           this.errors.push(e);
+          break;
       }
     }
   }
@@ -40,7 +47,24 @@ export class FleetDataService {
     //daca nu merge return c,return null atunci
     return null;
   }
+  validateCarData(car){
+    let requiredProps = "license model miles make".split(" ");
+    let hasErrors=false;
+    for(let field of requiredProps){
+      if(!car[field]){
+        this.errors.push(new DataError(`invalid field ${field}` ,car));
+        hasErrors=true;
+      }
+    }
+    if(Number.isNaN(Number.parseFloat(car.miles))){
+      this.errors.push(new DataError("invalid mileage",car));
+      hasErrors=true;
+    }
+    return !hasErrors;
+  }
 }
+  
+
 
 //LOAD DATA SIMPLE v1
 //Raw object fara integrarea clasei
