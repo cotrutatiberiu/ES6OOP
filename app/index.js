@@ -16,6 +16,17 @@ console.log(car.license);
 for(let e of dataService.errors)
 console.log(e.messege);
 
+//let car=dataService.getCarByLicense("AC201");
+//console.log(car);
+
+// let cars=dataService.getCarsSortedByLicense();
+//for(let car of cars)
+//console.log(car.license);
+
+// let cars=dataService.filterCarsByMake("U");
+// for(let car of cars)
+// console.log(car.make);
+
 
 //LOAD DATA SIMPLE v1
 // dataService.loadData(fleet);

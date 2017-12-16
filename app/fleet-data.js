@@ -21,23 +21,23 @@ export let fleet =[
         base:"adsc"
     },
     {
-        license: " AC201",
+        license: "AC201",
         type: "car",
-        make: "tesla",
+        make: "teslae",
         model:" asdfwe",
-        miles: "030"
+        miles: "3030"
     },
     {
         license: " AB201",
         type: "car",
-        make: "tesla",
+        make: "Uber",
         model:" asdfwe",
         miles: "6030"
     },
     {
         license: " AD201",
         type: "car",
-        make: "tesla",
+        make: "teslac",
         model:" asdfwe",
         miles: "6030"
     }
